@@ -1,0 +1,117 @@
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin: 50px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background: linear-gradient(#3a01df, aliceblue);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+button:hover {
+  background-color: black;
+  transition-duration: 0.5s;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.score {
+  color: white;
+  font-size: 50px;
+}
+
+.gameboard {
+  display: flex;
+  justify-content: center; /* 수평 중앙 */
+  align-items: center; /* 수직 중앙 */
+  height: 50%;
+}
+
+.start-btn {
+  text-align: center;
+  color: white;
+  background-color: #3a01df;
+  font-size: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-div {
+  margin-top: 150px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-div button {
+  text-align: center;
+  color: white;
+  background-color: #3a01df;
+  font-size: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-div button:hover {
+  background-color: black;
+  transition-duration: 0.5s;
+}
+
+.player-score,
+.computer-score {
+  text-align: center;
+}
+
+.who-win {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.game-over {
+  text-align: center;
+  margin: 50px;
+  font-size: 50px;
+  color: white;
+}
+
+.game-result {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.retry-btn {
+  margin-top: 70px;
+  color: white;
+  background-color: #3a01df;
+  font-size: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.retry-btn button:hover {
+  background-color: black;
+  transition-duration: 0.5s;
+}
