@@ -188,6 +188,9 @@ const retry = () => {
   playerScore.classList.remove("player-score");
   computerScore.classList.remove("computer-score");
 
+  player.removeChild(playerScore);
+  computer.removeChild(computerScore);
+
   gameDisplay();
 };
 
