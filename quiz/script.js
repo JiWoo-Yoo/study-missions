@@ -70,6 +70,7 @@ const showQuiz = () => {
   i += 1;
   const nextBtn = document.querySelector(".next-btn");
   if (nextBtn) {
+    background.style.backgroundColor = "gray";
     nextBtn.classList.remove("next-btn");
     quizBoard.removeChild(nextBtn);
   }
