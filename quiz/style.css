@@ -1,0 +1,87 @@
+.title {
+  color: white;
+  font-size: 200px;
+  display: inline-block;
+}
+
+.title:hover {
+  color: blue;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+body {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-board {
+  display: none;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+  height: 50vh;
+  flex: 1;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+}
+
+.quiz-options {
+  display: grid;
+  margin: 25px;
+  grid-template-columns: repeat(2, 1fr); /* 2열 그리드 */
+  gap: 10px; /* 각 셀 사이의 간격 조정 */
+}
+.option-btn {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  margin: 25px;
+  font-size: 30px;
+}
+
+.option-btn:hover {
+  background-color: blue;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.next-btn {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  right: 10%;
+  font-size: 50px;
+  margin: 2%;
+}
+
+.next-btn:hover {
+  background-color: blue;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.retry-btn {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  font-size: 50px;
+  position: absolute; /* 부모 상대로 절대 위치 지정*/
+  width: 50%;
+  height: 30%;
+  left: 25%;
+  top: 50%;
+}
+
+.retry-btn:hover {
+  background-color: blue;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
