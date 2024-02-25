@@ -1,0 +1,51 @@
+#book-input {
+}
+
+#book-input input:focus {
+  border-color: green;
+}
+
+#book-name {
+}
+
+#author {
+}
+
+#submit-btn {
+  text-align: center;
+  color: green;
+  background-color: white;
+  font-size: 30px;
+  border-color: green;
+  border-radius: 10px;
+}
+
+#submit-btn:hover {
+  color: white;
+  background-color: darkgreen;
+  border-color: black;
+  transition-duration: 0.5s;
+}
+
+.book-list {
+}
+
+#alert {
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+li span {
+}
+
+.delete-btn {
+}
+
+.item-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50%;
+}
