@@ -17,7 +17,6 @@ const generateRandomString = (options, length) => {
     let randomIndex_2 = Math.floor(Math.random() * options[randomIndex].length);
     randomString += options[randomIndex][randomIndex_2];
   }
-  console.log(randomString);
   return randomString;
 };
 
@@ -67,8 +66,13 @@ const checkOption = () => {
 createBtn.addEventListener("click", checkOption);
 copyBtn.addEventListener("click", () => {
   if (password.value !== undefined) {
-    navigator.clipboard.writeText(password.value);
-    alert("복사 완료!");
-    console.log(password.value);
+    navigator.clipboard
+      .writeText(password.value)
+      .then(() => {
+        alert("successfully copied");
+      })
+      .catch(() => {
+        alert("something went wrong");
+      });
   }
 });
