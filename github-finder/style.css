@@ -1,0 +1,25 @@
+#title {
+  border: 2px solid black;
+  font-size: 50px;
+}
+
+#search-form {
+  margin: 50px;
+  border: 2px solid black;
+}
+
+#search-title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+#description {
+  color: grey;
+  font-size: 30px;
+}
+
+#search-input {
+  margin: 20px;
+  font-size: 30px;
+  width: 95%;
+}
