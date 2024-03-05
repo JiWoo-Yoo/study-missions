@@ -1,4 +1,6 @@
-const h1 = document.querySelector("h1");
+const h1 = document.querySelector("#title");
+const alert = document.createElement("div");
+
 const inputForm = document.querySelector("#book-input");
 const bookName = inputForm.querySelector("#book-name");
 const author = inputForm.querySelector("#author");
@@ -7,15 +9,12 @@ const bookList = document.querySelector(".book-list");
 const submitBtn = document.querySelector("#submit-btn");
 
 let books = [];
+alert.id = "alert";
+h1.appendChild(alert);
+alert.style.display = "none";
+let notificationTimeout;
 
 const customAlert = (keyword) => {
-  //   const check_alert = document.querySelector("#alert");
-  //   if (check_alert) {
-  //     h1.removeChild(check_alert);
-  //   }
-  const alert = document.createElement("div");
-  alert.id = "alert";
-
   //add
   if (keyword === "add") {
     alert.textContent = "책이 추가되었습니다.";
@@ -31,11 +30,10 @@ const customAlert = (keyword) => {
     alert.textContent = "책 이름 혹은 저자 이름을 입력하지 않았습니다.";
     alert.style.backgroundColor = "orange";
   }
-
-  h1.appendChild(alert);
-
-  setTimeout(() => {
-    h1.removeChild(alert);
+  alert.style.display = "block";
+  clearTimeout(notificationTimeout);
+  notificationTimeout = setTimeout(() => {
+    alert.style.display = "none";
   }, 3000);
 };
 
@@ -56,6 +54,9 @@ const showBook = (bookObj) => {
 
   abook.textContent = bookObj.bookName;
   authorName.textContent = bookObj.author;
+
+  abook.classList.add("book-name");
+  authorName.classList.add("author-name");
 
   deleteBtn.textContent = "x";
   deleteBtn.addEventListener("click", deleteBook);

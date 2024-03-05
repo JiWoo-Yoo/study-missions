@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>책</h1>
+    <div id="title">책</div>
     <div id="book-input">
-      <h2>책 이름</h2>
-      <input id="book-name" type="text" autofocus />
-      <h2>책 저자</h2>
-      <input id="author" type="text" />
+      <div class="subtitle">책 이름</div>
+      <input class="input" id="book-name" type="text" autofocus />
+      <div class="subtitle">책 저자</div>
+      <input class="input" id="author" type="text" />
       <button id="submit-btn">제출</button>
     </div>
+    <hr />
     <div class="item-title-container">
       <div class="item-title">책 이름</div>
-      <div class="item-title">책 저자</div>
+      <div id="middle" class="item-title">책 저자</div>
     </div>
 
     <ul class="book-list"></ul>

@@ -1,36 +1,62 @@
+#title {
+  font-size: 50px;
+}
+
+.subtitle {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #book-input {
+  display: flex;
+  flex-direction: column;
 }
 
 #book-input input:focus {
-  border-color: green;
+  outline-color: green;
 }
 
-#book-name {
-}
-
-#author {
+.input {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 #submit-btn {
   text-align: center;
   color: green;
   background-color: white;
-  font-size: 30px;
+  font-size: 40px;
   border-color: green;
   border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-style: solid;
 }
 
 #submit-btn:hover {
   color: white;
   background-color: darkgreen;
-  border-color: black;
   transition-duration: 0.5s;
+  border-color: black;
 }
 
-.book-list {
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #alert {
+  font-size: 40px;
+  float: right;
+  width: 90%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+ul {
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 li {
@@ -39,13 +65,44 @@ li {
 }
 
 li span {
+  font-size: 20px;
+}
+
+.author-name {
+  position: absolute;
+  left: 50%;
 }
 
 .delete-btn {
+  margin-left: 100px;
+  text-align: center;
+  color: green;
+  background-color: white;
+  font-size: 20px;
+  border-color: green;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: white;
+  background-color: darkgreen;
+  transition-duration: 0.5s;
+  border-color: black;
 }
 
 .item-title-container {
   display: flex;
-  justify-content: space-between;
-  margin-right: 50%;
+}
+
+.item-title {
+  font-size: 30px;
+}
+
+#middle {
+  position: absolute;
+  left: 50%;
 }
