@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CustomAlert = ({ keyword }) => {
+const CustomAlert = ({ keyword, keywordState }) => {
   const [message, setMessage] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("");
 
@@ -19,11 +19,10 @@ const CustomAlert = ({ keyword }) => {
     const notificationTimeout = setTimeout(() => {
       setMessage("");
       setBackgroundColor("");
+      keywordState("");
     }, 3000);
 
-    return () => {
-      clearTimeout(notificationTimeout);
-    };
+    return () => clearTimeout(notificationTimeout);
   }, [keyword]);
 
   return (

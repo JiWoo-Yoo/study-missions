@@ -51,7 +51,7 @@ export default function App() {
     <div className="container">
       <div className="title">
         <h1>예산 계산기</h1>
-        <CustomAlert keyword={keyword} />
+        <CustomAlert keyword={keyword} keywordState={keywordState} />
       </div>
       <div className="calcBlock">
         <Input
