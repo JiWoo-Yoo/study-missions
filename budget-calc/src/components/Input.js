@@ -8,7 +8,7 @@ export default function Input({
   setTitleValue,
   costValue,
   setCostValue,
-  sumCost,
+  keywordState,
 }) {
   const inputStyle = {
     padding: "10px",
@@ -23,16 +23,20 @@ export default function Input({
       setTitleValue("");
       setCostValue(0);
     } else {
-      let newExpData = expData;
-      newExpData.push({
-        id: new Date().getTime(),
-        title: titleValue,
-        cost: costValue,
-      });
+      const newExpData = [
+        // 리액트 불변성 지키기 위한 전개 연산자
+        ...expData,
+        {
+          id: new Date().getTime(),
+          title: titleValue,
+          cost: costValue,
+        },
+      ];
+
       setExpData(newExpData);
       setTitleValue("");
       setCostValue(0);
-      sumCost();
+      keywordState("add");
     }
   };
 
