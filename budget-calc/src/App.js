@@ -6,7 +6,11 @@ import Input from "./components/Input";
 import CustomAlert from "./components/CustomAlert";
 
 export default function App() {
-  const [expData, setExpData] = useState([]);
+  const initialExpData = localStorage.getItem("expData")
+    ? JSON.parse(localStorage.getItem("expData"))
+    : [];
+
+  const [expData, setExpData] = useState(initialExpData);
   const [titleValue, setTitleValue] = useState("");
   const [costValue, setCostValue] = useState(0);
   const [totalCost, setTotalCost] = useState(0);
@@ -41,6 +45,7 @@ export default function App() {
 
   const deleteAll = () => {
     setExpData([]);
+    localStorage.setItem("expData", JSON.stringify([]));
     setTitleValue("");
     setCostValue(0);
     setTotalCost(0);

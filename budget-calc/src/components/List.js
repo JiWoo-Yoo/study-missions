@@ -20,6 +20,7 @@ const List = React.memo(
     const deleteData = (id) => {
       let newExpData = expData.filter((data) => data.id !== id);
       setExpData(newExpData);
+      localStorage.setItem("expData", JSON.stringify(newExpData));
       keywordState("delete");
     };
 
@@ -39,6 +40,7 @@ const List = React.memo(
         return data;
       });
       setExpData(updatedExpData);
+      localStorage.setItem("expData", JSON.stringify(updatedExpData));
       setIsEditing(false);
       keywordState("modified");
     };

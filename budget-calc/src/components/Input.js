@@ -34,6 +34,7 @@ export default function Input({
       ];
 
       setExpData(newExpData);
+      localStorage.setItem("expData", JSON.stringify(newExpData));
       setTitleValue("");
       setCostValue(0);
       keywordState("add");
