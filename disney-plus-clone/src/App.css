@@ -1,0 +1,6 @@
+* {
+  margin: 0;
+}
+.app {
+  background: radial-gradient(grey 0%, #31324e 30%, #010318 69%);
+}
