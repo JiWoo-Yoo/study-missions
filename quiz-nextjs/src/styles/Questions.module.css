@@ -1,0 +1,54 @@
+.questionsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.categoryButtons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categoryButtons button {
+  background-color: tomato;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.questionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.questionCard {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.questionCard h3 {
+  margin-bottom: 10px;
+}
+
+.optionsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option {
+  background-color: #e9e9e9;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #d1d1d1;
+}

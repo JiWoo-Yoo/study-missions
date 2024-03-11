@@ -1,4 +1,4 @@
-import GithubButton from "../../components/GithubButton";
+import LoginButton from "../../components/LoginButton";
 
 export default function LoginPage() {
   return (
@@ -23,7 +23,7 @@ export default function LoginPage() {
           }}
         />
         <div style={{ right: "10%", position: "absolute" }}>
-          <GithubButton />
+          <LoginButton />
         </div>
       </nav>
       <div>
