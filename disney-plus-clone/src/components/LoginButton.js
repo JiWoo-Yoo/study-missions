@@ -1,4 +1,4 @@
-const LoginButton = () => {
+const LoginButton = ({ onClick }) => {
   return (
     <div>
       <button
@@ -11,6 +11,7 @@ const LoginButton = () => {
           padding: "10px 20px",
           cursor: "pointer",
         }}
+        onClick={onClick}
       >
         LOGIN
       </button>

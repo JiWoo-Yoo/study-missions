@@ -5,19 +5,19 @@ const Category = () => {
   return (
     <Container>
       <Wrap>
-        <Logo>Disney</Logo>
+        <img src="/images/viewers-disney.png" alt="disney" />
       </Wrap>
       <Wrap>
-        <Logo>Pixar</Logo>
+        <img src="/images/viewers-marvel.png" alt="marvel" />
       </Wrap>
       <Wrap>
-        <Logo>Marble</Logo>
+        <img src="/images/viewers-national.png" alt="naitional" />
       </Wrap>
       <Wrap>
-        <Logo>Starwars</Logo>
+        <img src="/images/viewers-pixar.png" alt="pixar" />
       </Wrap>
       <Wrap>
-        <Logo>National Geographic</Logo>
+        <img src="/images/viewers-starwars.png" alt="starwars" />
       </Wrap>
     </Container>
   );
@@ -38,27 +38,33 @@ const Container = styled.div`
 `;
 
 const Wrap = styled.div`
+  padding-top: 56.25%;
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 69%) 0 26px 30px -10px,
     rgb(0 0 0 / 73%) 0 16px 10px -10px;
-  text-align: center;
 
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  border: 3px solid gray;
+  border: 3px solid rgba(249, 249, 249, 0.1);
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+  img {
+    inset: 0px;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 500ms ease-in-out 0s;
+    width: 100%;
+    z-index: 1;
+  }
 
   &:hover {
     box-shadow: rgb(0 0 0 / 80%) 0 40px 58px -16px,
       rgb(0 0 0 / 72%) 0px 30px 22px -10px;
     transform: scale(1.05);
-    border-color: aliceblue;
+    border-color: rgba(249, 249, 249, 0.8);
   }
-`;
-
-const Logo = styled.div`
-  font-size: 50px;
-  color: white;
-  font-weight: bold;
 `;

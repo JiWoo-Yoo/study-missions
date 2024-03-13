@@ -22,7 +22,11 @@
 
 미션8: 예산 계산기 앱(o)
 
-미션9: 디즈니 플러스 앱
+미션9: 디즈니 플러스 앱(o)
+(카테고리부분 참고)
+https://github.com/kimneighbor/clone-disney-plus-app
+
+firebase.js에는 apikey가 들어있어 .env와 함께 gitignore행.
 
 미션10: 포켓몬 도감 앱
 

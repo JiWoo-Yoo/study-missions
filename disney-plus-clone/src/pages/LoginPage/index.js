@@ -1,8 +1,14 @@
 import LoginButton from "../../components/LoginButton";
 
-export default function LoginPage() {
+export default function LoginPage({ handleLogin }) {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundImage: "url('/images/login-background.jpg')",
+      }}
+    >
       <nav
         className="nav"
         style={{
@@ -23,46 +29,78 @@ export default function LoginPage() {
           }}
         />
         <div style={{ right: "10%", position: "absolute" }}>
-          <LoginButton />
+          <LoginButton onClick={handleLogin} />
         </div>
       </nav>
-      <div>
-        <img
-          alt="Disney+ logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg"
-          style={{
-            width: "400px" /* 로고 이미지의 너비 */,
-            height: "auto" /* 로고 이미지의 높이를 자동으로 조정 */,
-            position: "absolute" /* 절대 위치로 설정 */,
-            top: "50%" /* 상단에서 50% 위치에 배치 */,
-            left: "50%" /* 좌측에서 50% 위치에 배치 */,
-            transform: "translate(-50%, -50%)" /* 수평 및 수직 정렬 */,
-          }}
-        />
-        <div>
-          <button
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+        }}
+      >
+        <div style={{ position: "relative" }}>
+          <img
+            alt="Disney+ logo"
+            // src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg"
+            src="https://upload.wikimedia.org/wikipedia/commons/archive/3/3e/20220128173228%21Disney%2B_logo.svg"
             style={{
-              border: "1px solid gray",
-              borderRadius: "10px",
-              padding: "10px 20px",
-              fontSize: "20px",
-              color: "white",
-              backgroundColor: "#2b8236",
               width: "400px",
               height: "auto",
-              position: "absolute" /* 절대 위치로 설정 */,
-              bottom: "30%",
-              left: "50%" /* 좌측에서 50% 위치에 배치 */,
-              transform: "translate(-50%, -50%)" /* 수평 및 수직 정렬 */,
-              cursor: "pointer",
+            }}
+          />
+        </div>
 
-              "&:hover": {
-                backgroundColor: "#152717",
-              },
+        <div
+          style={{ position: "relative", color: "white", textAlign: "center" }}
+        >
+          <div
+            style={{
+              fontSize: "50px",
+              width: "800px",
+              height: "auto",
+              color: "white",
+              marginBottom: "20px",
             }}
           >
-            가입하기
+            이 모든 이야기가 여기에
+            <br />
+            지금 스트리밍 중
+          </div>
+        </div>
+
+        <div
+          style={{ position: "relative", color: "white", textAlign: "center" }}
+        >
+          <button
+            style={{
+              backgroundColor: "blue",
+              color: "white",
+              fontSize: "30px",
+              width: "400px",
+              height: "auto",
+              borderRadius: "6px",
+              border: "none",
+              padding: "10px 20px",
+              margin: "20px 0",
+            }}
+          >
+            월 13,900원
           </button>
+          <div
+            style={{
+              fontSize: "10px",
+              color: "white",
+              width: "800px",
+              height: "auto",
+            }}
+          >
+            *월간 멤버십 12개월 구독료 대비 할인된 가격입니다.
+            <br />
+            추가 약관 적용.
+          </div>
         </div>
       </div>
     </div>

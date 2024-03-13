@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Nav.css";
 
-export default function Nav() {
+export default function Nav({ user }) {
   const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
 
@@ -30,9 +30,13 @@ export default function Nav() {
       />
 
       <img
-        alt="User logged"
-        src="https://occ-0-4796-988.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbme8JMz4rEKFJhtzpOKWFJ_6qX-0y5wwWyYvBhWS0VKFLa289dZ5zvRBggmFVWVPL2AAYE8xevD4jjLZjWumNo.png?r=a41"
         className="nav__avatar"
+        src={
+          user.photoURL ||
+          "https://occ-0-4796-988.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbme8JMz4rEKFJhtzpOKWFJ_6qX-0y5wwWyYvBhWS0VKFLa289dZ5zvRBggmFVWVPL2AAYE8xevD4jjLZjWumNo.png?r=a41"
+        }
+        alt="Profile"
+        style={{ width: "40px", height: "40px", borderRadius: "50%" }}
       />
     </nav>
   );
