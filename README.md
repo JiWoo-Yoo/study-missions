@@ -3,8 +3,8 @@
 [자바스크립트 과정 과제]
 
 미션1: 음식 메뉴 앱 만들기(o)
-
 이미지는 pixabay의 무료 이미지를 이용하였다.
+![FE1일차미션_영상](https://github.com/JiWoo-Yoo/study-missions/assets/145994347/d299de35-cbbe-48d4-a05c-4255c041bbfd)
 
 미션2: 가위바위보 게임 앱 만들기(o)
 
