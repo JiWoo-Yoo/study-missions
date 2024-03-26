@@ -1,3 +1,12 @@
+# 미션9: 디즈니 플러스 앱(o)
+
+![인프런FE스터디미션_디즈니앱](https://github.com/JiWoo-Yoo/study-missions/assets/145994347/829d9d99-6caa-43af-98ff-515c80d5d0a6)
+
+firebase.js에는 apikey가 들어있어 .env와 함께 gitignore 처리.
+
+database: tmDB https://www.themoviedb.org/?language=ko
+google login: firebase 이용
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
