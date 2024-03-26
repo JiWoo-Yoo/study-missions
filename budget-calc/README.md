@@ -1,3 +1,7 @@
+# 미션8: 예산 계산기 앱(o)
+
+![FE스터디_예산계산기앱](https://github.com/JiWoo-Yoo/study-missions/assets/145994347/b0604430-9a6b-489d-b55c-1d575fff6fac)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
