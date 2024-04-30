@@ -1,11 +1,24 @@
-# 미션9: 디즈니 플러스 앱(o)
+# disney-plus-clone
 
-![인프런FE스터디미션_디즈니앱](https://github.com/JiWoo-Yoo/study-missions/assets/145994347/829d9d99-6caa-43af-98ff-515c80d5d0a6)
 
-firebase.js에는 apikey가 들어있어 .env와 함께 gitignore 처리.
+미션9: 디즈니 플러스 앱 클론 코딩
 
-database: tmDB https://www.themoviedb.org/?language=ko
-google login: firebase 이용
+
+<img src="https://github.com/JiWoo-Yoo/study-missions/assets/145994347/829d9d99-6caa-43af-98ff-515c80d5d0a6" width="700" height="400"/>
+
+
+- JavaScript / HTML / CSS
+- ReactJS / npm
+- firebase를 이용한 google login 구현
+- database: tmDB https://www.themoviedb.org/?language=ko
+
+
++ 카테고리부분 참고
+https://github.com/kimneighbor/clone-disney-plus-app
+
+
+----------
+
 
 # Getting Started with Create React App
 

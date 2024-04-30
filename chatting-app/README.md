@@ -1,3 +1,23 @@
+# chatting-app
+
+
+미션12: 채팅 앱
+
+
+<img src="https://github.com/JiWoo-Yoo/study-missions/assets/145994347/f9802e82-3b3e-4a96-9ea8-b04d26c03710" width="700" height="400"/>
+
+
+- javaScript / CSS / HTML
+- NextJS / ReactJS / npm
+
+
++ 아래 사이트 참고
+https://blog.stackademic.com/building-a-real-time-chat-app-with-next-js-socket-io-and-typescript-e60ba40c09c7
+
+
+---------------
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

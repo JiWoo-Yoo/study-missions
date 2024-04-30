@@ -1,6 +1,17 @@
-# 미션8: 예산 계산기 앱(o)
+# budget-calc
 
-![FE스터디_예산계산기앱](https://github.com/JiWoo-Yoo/study-missions/assets/145994347/b0604430-9a6b-489d-b55c-1d575fff6fac)
+
+미션8: 예산 계산기 앱
+
+
+<img src="https://github.com/JiWoo-Yoo/study-missions/assets/145994347/b0604430-9a6b-489d-b55c-1d575fff6fac" width="700" height="400"/>
+
+
+- JavaScript / HTML / CSS / ReactJS
+
+
+----------
+
 
 # Getting Started with Create React App
 
