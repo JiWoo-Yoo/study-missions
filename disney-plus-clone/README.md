@@ -4,7 +4,7 @@
 미션9: 디즈니 플러스 앱 클론 코딩
 
 
-<img src="https://github.com/JiWoo-Yoo/study-missions/assets/145994347/829d9d99-6caa-43af-98ff-515c80d5d0a6" width="700" height="400"/>
+<img src="./public/images/main_page.png" width="700" height="400"/>
 
 
 - JavaScript / HTML / CSS
