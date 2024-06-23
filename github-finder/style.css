@@ -1,3 +1,6 @@
+.container {
+
+}
 #title {
   border: 2px solid black;
   font-size: 50px;
@@ -8,7 +11,7 @@
   border: 2px solid black;
 }
 
-#search-title {
+.title-bold {
   font-weight: bold;
   font-size: 60px;
 }
@@ -22,4 +25,72 @@
   margin: 20px;
   font-size: 30px;
   width: 95%;
+}
+
+.card-container {
+
+}
+
+.card-row {
+
+}
+
+.profile {
+
+}
+
+.profile-img {
+
+}
+
+.view-profile-btn {
+
+}
+
+.data {
+
+}
+
+.small-btn {
+
+}
+
+.blue {
+  background-color: #2E64FE;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.green {
+  background-color: green;
+}
+
+.aqua {
+  background-color: aqua
+}
+
+.data-list {
+
+}
+
+.data-list li {
+
+}
+
+.repos {
+
+}
+
+.repo-link {
+
+}
+
+.repo-btns {
+
+}
+
+.alert {
+  
 }

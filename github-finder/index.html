@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="title">Github Finder</div>
-    <div id="search-form">
-      <div id="search-title">Search Github Users</div>
-      <div id="description">
-        Enter a username to fetch a user profile and repos
+    <div class="container">
+      <div id="title">Github Finder</div>
+      <div id="search-form">
+        <div class="title-bold">Search Github Users</div>
+        <div id="description">
+          Enter a username to fetch a user profile and repos
+        </div>
+        <input id="search-input" autofocus placeholder="Github Username..." />
       </div>
-      <input id="search-input" autofocus placeholder="Github Username..." />
+      <div id="search-results"></div>
     </div>
-    <div id="search-results"></div>
     <script src="github.js"></script>
     <script src="ui.js"></script>
     <script src="app.js"></script>
