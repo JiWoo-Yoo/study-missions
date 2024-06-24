@@ -12,10 +12,10 @@ class UI {
                     <a href="${user.html_url}" target="_blank" class="view-profile-btn blue">View Profile</a>
                 </div>
                 <div class="data">
-                    <span class="small-btn">Public Repos: ${user.public_repos}</span>
-                    <span class="small-btn">Public Gists: ${user.public_gists}</span>
-                    <span class="small-btn">Followers: ${user.followers}</span>
-                    <span class="small-btn">Following: ${user.following}</span>
+                    <span class="small-btn blue">Public Repos: ${user.public_repos}</span>
+                    <span class="small-btn gray">Public Gists: ${user.public_gists}</span>
+                    <span class="small-btn green">Followers: ${user.followers}</span>
+                    <span class="small-btn aqua">Following: ${user.following}</span>
                     <br><br>
                     <ul class="data-list">
                         <li>Company: ${user.company}</li>
@@ -42,9 +42,9 @@ class UI {
                         <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                     </div>
                     <div class="repo-btns">
-                        <span class="small-btn">Stars: ${repo.stargazers_count}</span>
-                        <span class="small-btn">Watchers: ${repo.watchers_count}</span>
-                        <span class="small-btn">Forks: ${repo.forks_count}</span>
+                        <span class="small-btn blue">Stars: ${repo.stargazers_count}</span>
+                        <span class="small-btn gray">Watchers: ${repo.watchers_count}</span>
+                        <span class="small-btn green">Forks: ${repo.forks_count}</span>
                     </div>
                 </div>
             </div>

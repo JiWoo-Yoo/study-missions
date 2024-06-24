@@ -1,19 +1,30 @@
-.container {
-
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-#title {
-  border: 2px solid black;
-  font-size: 50px;
+/* .container {
+} */
+#logo {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 #search-form {
   margin: 50px;
-  border: 2px solid black;
+  padding: 20px;
+  border: 2px solid gainsboro;
+  border-radius: 5px;
 }
 
 .title-bold {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
+  color: black;
 }
 
 #description {
@@ -22,37 +33,82 @@
 }
 
 #search-input {
-  margin: 20px;
-  font-size: 30px;
+  font-size: 25px;
   width: 95%;
+  margin-top: 15px;
+  padding: 5px;
+  color: black;
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-input:hover {
+  background-color: gainsboro;
+  transition-duration: 0.5s;
+}
+
+#search-results {
+  margin: 0px 50px;
 }
 
 .card-container {
-
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gainsboro;
 }
 
 .card-row {
-
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .profile {
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .profile-img {
-
+  width: 200px;
+  border: 1px solid gray;
 }
 
 .view-profile-btn {
-
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration-line: none;
 }
 
-.data {
-
+.view-profile-btn:hover {
+  cursor: pointer;
+  background-color: darkblue;
+  transition-duration: 0.5s;
 }
+
+/* .data {
+
+} */
 
 .small-btn {
-
+  font-size: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
 }
 
 .blue {
@@ -76,7 +132,9 @@
 }
 
 .data-list li {
-
+  list-style-type: none;
+  border: 1px solid gray;
+  padding: 10px 20px;
 }
 
 .repos {
@@ -84,13 +142,17 @@
 }
 
 .repo-link {
-
+  text-decoration-line: none;
+  color: blue;
 }
 
 .repo-btns {
-
+  gap: 10px;
 }
 
 .alert {
-  
+  background-color: gainsboro;
+  padding: 10px 20px;
+  border: 2px solid gray;
+  font-size: 10px;
 }
