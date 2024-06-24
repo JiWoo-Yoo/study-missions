@@ -1,5 +1,5 @@
 // init github
-const github = new Github();
+const github = new Github;
 
 // init UI
 const ui = new UI;

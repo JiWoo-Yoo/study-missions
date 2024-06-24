@@ -2,15 +2,29 @@ const express = require('express');
 const axios = require('axios');
 const dotenv = require('dotenv');
 
+const cors = require('cors');
+
 dotenv.config();
 
 const app = express();
 
 const PORT = process.env.PORT || 5000;
 
+const corsOptions = {
+  origin: 'http://127.0.0.1:5500',
+  optionsSuccessStatus: 200,     // CORS 프리플라이 옵션
+};
+
+app.use(cors(corsOptions));
+
+app.get('/', (req, res) => {
+  res.send('Github finder!');
+});
+
 app.get('/api/github/:username', async (req, res) => {
   try {
     const { username } = req.params;
+    console.log(`Request received for username: ${username}`);
 
     const profileResponse = await axios.get(`https://api.github.com/users/${username}`, {
       params: {
@@ -38,5 +52,5 @@ app.get('/api/github/:username', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
