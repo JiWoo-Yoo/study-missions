@@ -3,6 +3,8 @@
 
 미션9: 디즈니 플러스 앱 클론 코딩
 
+해당 프로젝트는 개인 학습 용도로 제작되었습니다.
+
 
 <img src="./public/images/main_page.png" width="700" height="400"/>
 
@@ -11,11 +13,6 @@
 - ReactJS / npm
 - firebase를 이용한 google login 구현
 - database: tmDB https://www.themoviedb.org/?language=ko
-
-
-+ 카테고리부분 참고
-https://github.com/kimneighbor/clone-disney-plus-app
-
 
 ----------
 
