@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// axios는 인스턴스를 생성하여 url을 재사용.
 const instance = axios.create({
   baseURL: "https://api.themoviedb.org/3",
   params: {

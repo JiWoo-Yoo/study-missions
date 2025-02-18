@@ -1,9 +1,9 @@
-# disney-plus-clone
+# movie-app-clone
 
 
-미션9: 디즈니 플러스 앱 클론 코딩
+미션9: 영화 앱 클론 코딩
 
-해당 프로젝트는 개인 학습 용도로 제작되었습니다.
+디즈니 플러스 앱을 클론코딩 하였으며, 해당 프로젝트는 개인 학습 용도로 제작되었습니다.
 
 
 <img src="./public/images/main_page.png" width="700" height="400"/>

@@ -32,7 +32,7 @@
 미션8 - 예산 계산기 앱
 
 
-미션9 - 디즈니 플러스 앱
+미션9 - 영화 앱
 
 
 미션11 - 퀴즈 앱
@@ -110,11 +110,11 @@
 폴더명: budget-calc
 
 
-#### 미션9: 디즈니 플러스 앱
-<img src="./disney-plus-clone/public/images/main_page.png" width="700" height="400"/>
+#### 미션9: 영화 앱
+<img src="./movie-app-clone/public/images/main_page.png" width="700" height="400"/>
 
 
-폴더명: disney-plus-clone
+폴더명: movie-app-clone
 
 
 #### 미션10: 포켓몬 도감 앱
